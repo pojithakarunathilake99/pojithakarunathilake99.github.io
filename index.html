@@ -3,153 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pojitha Hettiarachchilalage - Portfolio</title>
+    <title>Pojitha - Tutor, Mentor & Career Guide</title>
     <link rel="icon" href="generated-icon.png" type="image/png">
-    
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home"><img src="assets/img/pojitha-tech-logo.png" alt="PojithaTech" height="80"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/img/pojitha-tech-logo.png" alt="PojithaTech" height="65">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutoring">Tutoring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#career">Career Guidance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-free-cta" href="#career">
+                            <i class="fas fa-star me-1"></i>Free Guidance
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="d-flex align-items-center min-vh-100">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="mb-4">Pojitha Hettiarachchilalage</h1>
-                    <h2 class="subtitle mb-4">I'm a <span class="typed" data-typed-items="Developer,Researcher"></span></h2>
-                    
-                    <p class="lead mb-5">
-                        I love building smart, secure, and practical solutions that solve real-world problems — whether it's developing community websites, creating innovative IoT applications, or designing digital gifts that bring smiles to loved ones.
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="hero-badge-wrap mb-4">
+                        <span class="hero-badge"><i class="fas fa-chalkboard-teacher me-2"></i>Educator · Engineer · Mentor</span>
+                    </div>
+                    <h1 class="hero-title mb-3">Hi, I'm <span class="highlight">Pojitha</span></h1>
+                    <h2 class="hero-subtitle mb-4">
+                        I'm your <span class="typed" data-typed-items="Tech Tutor,AI Mentor,Career Guide,Computer Science Teacher,Learning Partner"></span>
+                    </h2>
+                    <p class="hero-lead mb-5">
+                        I teach <strong>Computer Science, AI, Machine Learning & IoT</strong> to learners from <strong>age 12</strong> and above — 
+                        and I offer <strong>completely free career guidance</strong> to help you find your path in tech.
                     </p>
-                    
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary me-3">View My Work</a>
-                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                    <div class="hero-actions d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#tutoring" class="btn btn-hero-primary">
+                            <i class="fas fa-book-open me-2"></i>Start Learning
+                        </a>
+                        <a href="#career" class="btn btn-hero-free">
+                            <i class="fas fa-gift me-2"></i>Free Career Guidance
+                        </a>
+                        <a href="#portfolio" class="btn btn-hero-outline">
+                            <i class="fas fa-briefcase me-2"></i>My Portfolio
+                        </a>
+                    </div>
+
+                    <div class="hero-stats mt-5">
+                        <div class="row justify-content-center g-3">
+                            <div class="col-auto">
+                                <div class="stat-pill">
+                                    <i class="fas fa-child stat-icon"></i>
+                                    <div>
+                                        <strong>From Age 12</strong>
+                                        <span>Tutoring available</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="stat-pill free">
+                                    <i class="fas fa-hand-holding-heart stat-icon"></i>
+                                    <div>
+                                        <strong>100% Free</strong>
+                                        <span>Career Guidance</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="stat-pill">
+                                    <i class="fas fa-graduation-cap stat-icon"></i>
+                                    <div>
+                                        <strong>MSc AI</strong>
+                                        <span>Birmingham City Uni</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="mouse-scroll">
-            <a href="#about">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </a>
+            <a href="#about"><div class="mouse"><div class="wheel"></div></div></a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="section-divider"></div>
-                </div>
+            <div class="col-lg-12 text-center mb-5">
+                <span class="section-badge">Who I Am</span>
+                <h2 class="section-title mt-2">About Me</h2>
+                <div class="section-divider"></div>
             </div>
-            
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <h3>Education & Experience</h3>
-                    <p>
-                        With hands-on experience in IoT, Machine Learning, Web Development, and Cybersecurity, I'm driven by innovation, creativity, and making a real impact through technology.
-                    </p>
-                    <p>
-                        I hold a Master's degree in Artificial Intelligence from Birmingham City University (2022–2023), where my thesis explored "Identifying and Managing Human Mental Fatigue Using AI." Prior to that, I earned my BSc (Hons) in Computer Security from NSBM Green University (affiliated with Plymouth University, UK), graduating with Second Upper Class Honours (2018–2022).
-                    </p>
-                    <p>
-                        Professionally, I've gained valuable experience across multiple domains:
-                    </p>
-                    <ul>
-                        <li>Currently working as an IoT Hardware Engineer at CompleteCyber, where I help build cutting-edge cybersecurity inspection devices with in-house IDS/IPS and ML capabilities.</li>
-                        <li>Volunteering as an Artificial Intelligence Lecturer at Genius Biut Academy, where I enjoy teaching and inspiring the next generation of AI talent.</li>
-                        <li>Previously worked as an IoT Developer at Arimac Digital</li>
-                        <li>Served as a Research Assistant at the Dialog 5G Research Lab in Sri Lanka.</li>
-                    </ul>
-                    <p>
-                        When I'm not coding or soldering a Raspberry Pi, I'm designing smart tools to support daily life, leading tech initiatives in my community, or diving deeper into electronics and PCB design. I'm also passionate about making tech more accessible — from creating a Python learning platform for kids, to building custom smart devices that help people feel supported, connected, and secure.
-                    </p>
-                    <a href="assets/resume.pdf" class="btn btn-primary mt-3" download>Download CV</a>
-                </div>
-                
+            <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <div class="skills-container">
-                        <h3>Technical Skills</h3>
-                        
-                        <div class="skill-category mb-4">
-                            <h4>IoT & Hardware</h4>
-                            <div class="tech-stack">
-                                <span class="tech-badge">Raspberry Pi</span>
-                                <span class="tech-badge">Arduino</span>
-                                <span class="tech-badge">AWS Greengrass</span>
-                                <span class="tech-badge">PCB Design</span>
-                            </div>
+                    <h3 class="about-heading">Educator. Engineer. Mentor.</h3>
+                    <p class="about-text">
+                        I'm <strong>Pojitha Hettiarachchilalage</strong> — a tech professional, educator and mentor based in the UK. 
+                        I hold a <strong>Master's in Artificial Intelligence</strong> from Birmingham City University and a 
+                        <strong>BSc in Computer Security</strong> from NSBM Green University (affiliated with Plymouth University, UK).
+                    </p>
+                    <p class="about-text">
+                        I currently work as an <strong>IoT Hardware Engineer at CompleteCyber</strong>, building cutting-edge 
+                        cybersecurity inspection devices. I also volunteer as an <strong>AI Lecturer at Genius Biut Academy</strong>, 
+                        where I teach and inspire the next generation of tech talent.
+                    </p>
+                    <p class="about-text">
+                        My passion is making technology education accessible to everyone — from young learners aged 12 
+                        taking their first steps in coding, to professionals navigating career transitions in tech.
+                    </p>
+                    <div class="about-highlights mt-4">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MSc Artificial Intelligence — Birmingham City University (2022–2023)</span>
                         </div>
-                        
-                        <div class="skill-category mb-4">
-                            <h4>Machine Learning & AI</h4>
-                            <div class="tech-stack">
-                                <span class="tech-badge">TensorFlow</span>
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">Predictive Modeling</span>
-                                <span class="tech-badge">Data Analysis</span>
-                            </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>BSc Computer Security — NSBM / Plymouth University UK (2018–2022)</span>
                         </div>
-                        
-                        <div class="skill-category mb-4">
-                            <h4>Web Development</h4>
-                            <div class="tech-stack">
-                                <span class="tech-badge">HTML/CSS</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">React</span>
-                                <span class="tech-badge">Node.js</span>
-                            </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>AI Lecturer — Genius Biut Academy (Volunteer)</span>
                         </div>
-                        
-                        <div class="skill-category">
-                            <h4>Cybersecurity</h4>
-                            <div class="tech-stack">
-                                <span class="tech-badge">IDS/IPS Systems</span>
-                                <span class="tech-badge">Network Security</span>
-                                <span class="tech-badge">Data Protection</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>IoT Hardware Engineer — CompleteCyber</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Former Research Assistant — Dialog 5G Research Lab, Sri Lanka</span>
+                        </div>
+                    </div>
+                    <a href="assets/resume.pdf" class="btn btn-primary mt-4" download>
+                        <i class="fas fa-download me-2"></i>Download CV
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="expertise-grid">
+                        <h4 class="expertise-heading mb-4">My Technical Expertise</h4>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="expertise-card">
+                                    <i class="fas fa-robot"></i>
+                                    <h5>AI & ML</h5>
+                                    <p>TensorFlow, Python, Neural Networks, Predictive Modeling</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="expertise-card">
+                                    <i class="fas fa-microchip"></i>
+                                    <h5>IoT & Hardware</h5>
+                                    <p>Raspberry Pi, Arduino, AWS Greengrass, PCB Design</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="expertise-card">
+                                    <i class="fas fa-code"></i>
+                                    <h5>Web Development</h5>
+                                    <p>HTML, CSS, JavaScript, React, Node.js</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="expertise-card">
+                                    <i class="fas fa-lock"></i>
+                                    <h5>Cybersecurity</h5>
+                                    <p>IDS/IPS, Network Security, Data Protection</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,27 +197,201 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <!-- Tutoring Section -->
+    <section id="tutoring" class="py-5 section-alt">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="section-divider"></div>
-                    <p class="lead">Here are some of the projects I've worked on</p>
+            <div class="col-lg-12 text-center mb-2">
+                <span class="section-badge">Learn With Me</span>
+                <h2 class="section-title mt-2">Tutoring</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="text-center mb-5">
+                <div class="age-banner">
+                    <i class="fas fa-child me-2"></i>
+                    Welcoming learners from <strong>Age 12</strong> — all the way to university and beyond
+                </div>
+                <p class="lead text-muted mt-3">Hands-on, personalised sessions in Computer Science, AI, ML & IoT</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- CS Fundamentals -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutor-card h-100">
+                        <div class="tutor-card-icon" style="background: linear-gradient(135deg, #0c2461, #4a69bd);">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="tutor-card-body">
+                            <div class="age-tag">Age 12+</div>
+                            <h3>Computer Science Fundamentals</h3>
+                            <p>Perfect starting point for young learners. Cover core CS concepts — logic, algorithms, data structures, and problem-solving in a fun and engaging way.</p>
+                            <ul class="tutor-topics">
+                                <li><i class="fas fa-check-circle"></i> Logic & Algorithms</li>
+                                <li><i class="fas fa-check-circle"></i> Data Structures</li>
+                                <li><i class="fas fa-check-circle"></i> GCSE / A-Level CS Support</li>
+                            </ul>
+                        </div>
+                        <div class="tutor-card-footer">
+                            <a href="#contact" class="btn btn-tutor">Book a Session</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutor-card h-100">
+                        <div class="tutor-card-icon" style="background: linear-gradient(135deg, #3776AB, #FFD43B);">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tutor-card-body">
+                            <div class="age-tag">Age 12+</div>
+                            <h3>Python Programming</h3>
+                            <p>From first-ever lines of code to advanced Python. Practical, project-based learning for kids, teens, and adults who want to build real things.</p>
+                            <ul class="tutor-topics">
+                                <li><i class="fas fa-check-circle"></i> Beginner to Advanced</li>
+                                <li><i class="fas fa-check-circle"></i> Games, Apps & Automation</li>
+                                <li><i class="fas fa-check-circle"></i> Fun Projects for Young Learners</li>
+                            </ul>
+                        </div>
+                        <div class="tutor-card-footer">
+                            <a href="#contact" class="btn btn-tutor">Book a Session</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutor-card h-100">
+                        <div class="tutor-card-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="tutor-card-body">
+                            <div class="age-tag">Age 14+</div>
+                            <h3>Artificial Intelligence & ML</h3>
+                            <p>Understand how AI and Machine Learning work and build your own models. Taught by an MSc AI graduate with real research and industry experience.</p>
+                            <ul class="tutor-topics">
+                                <li><i class="fas fa-check-circle"></i> ML Fundamentals</li>
+                                <li><i class="fas fa-check-circle"></i> TensorFlow & Neural Networks</li>
+                                <li><i class="fas fa-check-circle"></i> AI Project & Dissertation Help</li>
+                            </ul>
+                        </div>
+                        <div class="tutor-card-footer">
+                            <a href="#contact" class="btn btn-tutor">Book a Session</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutor-card h-100">
+                        <div class="tutor-card-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="tutor-card-body">
+                            <div class="age-tag">Age 12+</div>
+                            <h3>IoT & Hardware</h3>
+                            <p>Get hands-on with Raspberry Pi, Arduino, and real electronics. Build smart devices and connect them to the internet — perfect for curious young minds.</p>
+                            <ul class="tutor-topics">
+                                <li><i class="fas fa-check-circle"></i> Raspberry Pi & Arduino</li>
+                                <li><i class="fas fa-check-circle"></i> Sensors, Circuits & Smart Devices</li>
+                                <li><i class="fas fa-check-circle"></i> Cloud IoT Integration</li>
+                            </ul>
+                        </div>
+                        <div class="tutor-card-footer">
+                            <a href="#contact" class="btn btn-tutor">Book a Session</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutor-card h-100">
+                        <div class="tutor-card-icon" style="background: linear-gradient(135deg, #c0392b, #e74c3c);">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="tutor-card-body">
+                            <div class="age-tag">Age 14+</div>
+                            <h3>Cybersecurity</h3>
+                            <p>Learn how to protect systems and networks. Covers core security concepts, ethical hacking basics, and real-world defence strategies.</p>
+                            <ul class="tutor-topics">
+                                <li><i class="fas fa-check-circle"></i> Network Security Basics</li>
+                                <li><i class="fas fa-check-circle"></i> Ethical Hacking Intro</li>
+                                <li><i class="fas fa-check-circle"></i> IDS/IPS Systems</li>
+                            </ul>
+                        </div>
+                        <div class="tutor-card-footer">
+                            <a href="#contact" class="btn btn-tutor">Book a Session</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Support -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tutor-card h-100">
+                        <div class="tutor-card-icon" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="tutor-card-body">
+                            <div class="age-tag">All Ages</div>
+                            <h3>Academic & University Support</h3>
+                            <p>Coursework, dissertation, and thesis support for students studying CS, AI, Cybersecurity, and related tech subjects at all levels.</p>
+                            <ul class="tutor-topics">
+                                <li><i class="fas fa-check-circle"></i> GCSE & A-Level CS</li>
+                                <li><i class="fas fa-check-circle"></i> University Coursework Help</li>
+                                <li><i class="fas fa-check-circle"></i> Dissertation & Research Guidance</li>
+                            </ul>
+                        </div>
+                        <div class="tutor-card-footer">
+                            <a href="#contact" class="btn btn-tutor">Book a Session</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
+            <!-- How Tutoring Works -->
+            <div class="how-it-works">
+                <h3 class="text-center mb-4">How It Works</h3>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="step-circle">1</div>
+                        <h5 class="mt-3">Reach Out</h5>
+                        <p class="text-muted small">Message me via WhatsApp, LinkedIn, or Email</p>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="step-circle">2</div>
+                        <h5 class="mt-3">Free Intro Call</h5>
+                        <p class="text-muted small">We discuss your goals, level, and what you want to learn</p>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="step-circle">3</div>
+                        <h5 class="mt-3">Custom Plan</h5>
+                        <p class="text-muted small">I build a personalised learning plan just for you</p>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="step-circle">4</div>
+                        <h5 class="mt-3">Start Learning</h5>
+                        <p class="text-muted small">Regular sessions, real projects, real progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="col-lg-12 text-center mb-5">
+                <span class="section-badge">My Work</span>
+                <h2 class="section-title mt-2">Portfolio</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Real projects I've built across AI, IoT, Web & Security</p>
+            </div>
             <div class="row g-4">
-                <!-- Project 1 -->
                 <div class="col-md-6 col-lg-6">
                     <div class="card project-card h-100">
                         <div class="card-body">
-                            <div class="project-icon mb-3">
-                                <i class="fas fa-globe"></i>
-                            </div>
+                            <div class="project-icon mb-3"><i class="fas fa-globe"></i></div>
                             <h3 class="card-title">WalesAPI SL Community</h3>
-                            <p class="card-text">A community website for Sri Lankans in Wales, providing resources, event information, and cultural connections to help diaspora members stay connected.</p>
+                            <p class="card-text">A community website for Sri Lankans in Wales, providing resources, event information, and cultural connections to help the diaspora stay connected.</p>
                             <div class="tech-used">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">Node.js</span>
@@ -186,21 +399,16 @@
                             </div>
                         </div>
                         <div class="card-footer bg-transparent border-0">
-                            <a href="https://walesapi.co.uk/" target="_blank" class="btn btn-outline-primary btn-sm me-2">Demo</a>
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Code</a>
+                            <a href="https://walesapi.co.uk/" target="_blank" class="btn btn-outline-primary btn-sm me-2">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
                 <div class="col-md-6 col-lg-6">
                     <div class="card project-card h-100">
                         <div class="card-body">
-                            <div class="project-icon mb-3">
-                                <i class="fas fa-child"></i>
-                            </div>
+                            <div class="project-icon mb-3"><i class="fas fa-child"></i></div>
                             <h3 class="card-title">Python for Kids App</h3>
-                            <p class="card-text">An educational application designed to teach children programming basics using Python through interactive games and exercises.</p>
+                            <p class="card-text">An educational application designed to teach children programming basics through interactive games and exercises — the inspiration behind my tutoring for young learners.</p>
                             <div class="tech-used">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Pygame</span>
@@ -208,21 +416,16 @@
                             </div>
                         </div>
                         <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Demo</a>
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Code</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-sm me-2">Ask Me</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 3 -->
                 <div class="col-md-6 col-lg-6">
                     <div class="card project-card h-100">
                         <div class="card-body">
-                            <div class="project-icon mb-3">
-                                <i class="fas fa-gift"></i>
-                            </div>
-                            <h3 class="card-title">Raspberry Pi Gift</h3>
-                            <p class="card-text">A personalized digital gift project built with Raspberry Pi featuring customized media playback, interactive elements, and heartfelt messages for loved ones.</p>
+                            <div class="project-icon mb-3"><i class="fas fa-gift"></i></div>
+                            <h3 class="card-title">Raspberry Pi Smart Gift</h3>
+                            <p class="card-text">A personalised digital gift built with Raspberry Pi, featuring custom media playback, interactive elements, and heartfelt messages — blending creativity with engineering.</p>
                             <div class="tech-used">
                                 <span class="tech-tag">Raspberry Pi</span>
                                 <span class="tech-tag">Python</span>
@@ -230,156 +433,176 @@
                             </div>
                         </div>
                         <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Demo</a>
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Code</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-sm me-2">Ask Me</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 4 -->
                 <div class="col-md-6 col-lg-6">
                     <div class="card project-card h-100">
                         <div class="card-body">
-                            <div class="project-icon mb-3">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
+                            <div class="project-icon mb-3"><i class="fas fa-network-wired"></i></div>
                             <h3 class="card-title">IDS/IPS Detection System</h3>
-                            <p class="card-text">A network security solution that monitors, detects, and responds to potential intrusions and security threats in real-time.</p>
+                            <p class="card-text">A network security solution that monitors, detects, and responds to potential intrusions and security threats in real-time using ML-based detection techniques.</p>
                             <div class="tech-used">
                                 <span class="tech-tag">Cybersecurity</span>
                                 <span class="tech-tag">Python</span>
+                                <span class="tech-tag">ML</span>
                                 <span class="tech-tag">Networking</span>
                             </div>
                         </div>
                         <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Demo</a>
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Code</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-sm me-2">Ask Me</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Services I Provide</h2>
-                    <div class="section-divider"></div>
-                    <p class="lead">Expertise to help you build innovative solutions</p>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Service 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>ML Models for Businesses</h3>
-                        <p>Custom machine learning solutions that analyze your data to provide actionable insights, predictions, and optimize your business processes.</p>
-                        <a href="#contact" class="btn btn-outline-primary btn-sm">Request a Quote</a>
-                    </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>Full-stack web development services using React, Node.js, and other modern technologies to create responsive, user-friendly websites and applications.</p>
-                        <a href="#contact" class="btn btn-outline-primary btn-sm">Request a Quote</a>
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <h3>IoT Prototyping</h3>
-                        <p>Custom IoT device development from concept to prototype, including hardware integration, firmware development, and cloud connectivity.</p>
-                        <a href="#contact" class="btn btn-outline-primary btn-sm">Request a Quote</a>
-                    </div>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Cybersecurity Setup</h3>
-                        <p>Implementation of robust security systems, including IDS/IPS solutions, network monitoring, and security audits to protect your digital assets.</p>
-                        <a href="#contact" class="btn btn-outline-primary btn-sm">Request a Quote</a>
-                    </div>
-                </div>
-                
-                <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Raspberry Pi & Arduino Consulting</h3>
-                        <p>Expert advice and development assistance for projects involving Raspberry Pi, Arduino, and similar platforms for custom electronics solutions.</p>
-                        <a href="#contact" class="btn btn-outline-primary btn-sm">Request a Quote</a>
-                    </div>
-                </div>
-                
-                <!-- Service 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon">
-                            <i class="fas fa-gift"></i>
-                        </div>
-                        <h3>Custom Gift Development</h3>
-                        <p>Creation of personalized tech gifts for special occasions, incorporating electronics, programming, and creative design for a unique experience.</p>
-                        <a href="#contact" class="btn btn-outline-primary btn-sm">Request a Quote</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <!-- Free Career Guidance Section -->
+    <section id="career" class="py-5 section-alt">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="section-divider"></div>
-                    <p class="lead">Interested in working together? Let's connect!</p>
+            <div class="col-lg-12 text-center mb-2">
+                <span class="section-badge free-badge"><i class="fas fa-star me-1"></i>100% Free · No Catch</span>
+                <h2 class="section-title mt-2">Free Career Guidance</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Honest, experience-based advice to help you find and grow your path in tech</p>
+            </div>
+
+            <!-- Big Banner -->
+            <div class="career-banner mb-5">
+                <div class="row align-items-center gy-3">
+                    <div class="col-lg-8">
+                        <h3 class="career-banner-title">Not sure which tech path is right for you?</h3>
+                        <p class="career-banner-text mb-0">
+                            Whether you're a student choosing your first CS degree, a professional switching into tech, 
+                            or someone just starting to explore — I offer <strong>completely free one-on-one career guidance</strong> 
+                            based on years of real industry and academic experience in AI, IoT, Cybersecurity and more.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="http://wa.me/447443995851" target="_blank" class="btn btn-career-cta">
+                            <i class="fab fa-whatsapp me-2"></i>Book Free Session Now
+                        </a>
+                    </div>
                 </div>
             </div>
-            
+
+            <!-- What I Help With -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="guidance-card">
+                        <div class="guidance-icon"><i class="fas fa-route"></i></div>
+                        <h4>Choosing Your Tech Path</h4>
+                        <p>AI, Cybersecurity, Web Dev, IoT — confused about where to start? I'll help you find the right direction based on your interests and strengths.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="guidance-card">
+                        <div class="guidance-icon"><i class="fas fa-briefcase"></i></div>
+                        <h4>Landing Your First Tech Job</h4>
+                        <p>CV tips, portfolio advice, interview prep, and realistic expectations for breaking into the tech industry — especially in the UK.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="guidance-card">
+                        <div class="guidance-icon"><i class="fas fa-university"></i></div>
+                        <h4>University & Course Selection</h4>
+                        <p>Choosing a degree or postgrad course? I can share my experience navigating UK universities and selecting the right tech programme.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="guidance-card">
+                        <div class="guidance-icon"><i class="fas fa-level-up-alt"></i></div>
+                        <h4>Levelling Up Your Career</h4>
+                        <p>Already in tech and want to grow? I can help you figure out what certifications, projects or specialisations are worth your time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="guidance-card">
+                        <div class="guidance-icon"><i class="fas fa-file-alt"></i></div>
+                        <h4>CV & LinkedIn Review</h4>
+                        <p>Honest, constructive feedback on your CV and LinkedIn profile to help you stand out to recruiters and hiring managers in tech.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="guidance-card">
+                        <div class="guidance-icon"><i class="fas fa-globe-asia"></i></div>
+                        <h4>International & Diaspora Students</h4>
+                        <p>Navigating a tech career in a new country is tough. As a Sri Lankan professional in the UK, I understand your unique challenges.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Quote -->
+            <div class="personal-note text-center">
+                <div class="note-content">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="note-text">
+                        "I've been where you are — uncertain, overwhelmed, unsure of the next step. 
+                        I don't charge for career guidance because I believe everyone deserves access to 
+                        honest mentorship, regardless of their background or budget. Just reach out."
+                    </p>
+                    <p class="note-author">— Pojitha Hettiarachchilalage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="col-lg-12 text-center mb-5">
+                <span class="section-badge">Let's Talk</span>
+                <h2 class="section-title mt-2">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Ready to start learning or need career advice? I'm just a message away.</p>
+            </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card contact-card">
-                        <div class="card-body text-center">
-                            <h3 class="mb-4">Connect with me on social media</h3>
-                            <div class="social-links mb-4">
-                                <a href="https://www.linkedin.com/in/pojitha-hettiarachchilalage-830023161/" target="_blank" class="social-link" title="LinkedIn">
-                                    <i class="fab fa-linkedin fa-2x"></i>
-                                </a>
-                                <a href="https://www.facebook.com/pojitha.karunathilake.9/" target="_blank" class="social-link" title="Facebook">
-                                    <i class="fab fa-facebook fa-2x"></i>
-                                </a>
-                                <a href="https://github.com/pojithakarunathilake99" target="_blank" class="social-link" title="GitHub">
-                                    <i class="fab fa-github fa-2x"></i>
-                                </a>
-                                <a href="http://wa.me/447871363539" target="_blank" class="social-link" title="WhatsApp">
-                                    <i class="fab fa-whatsapp fa-2x"></i>
+                <div class="col-lg-10">
+                    <div class="contact-wrapper">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-6 col-md-3 text-center">
+                                <a href="https://www.linkedin.com/in/pojitha-hettiarachchilalage-830023161/" target="_blank" class="contact-method">
+                                    <div class="contact-icon" style="background: linear-gradient(135deg, #0077b5, #00a0dc);">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <h5>LinkedIn</h5>
+                                    <p>Connect professionally</p>
                                 </a>
                             </div>
-                            <p class="mt-4">
-                                Feel free to reach out to me directly through any of the platforms above. <br>
-                                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                            <div class="col-6 col-md-3 text-center">
+                                <a href="http://wa.me/447443995851" target="_blank" class="contact-method">
+                                    <div class="contact-icon" style="background: linear-gradient(135deg, #25d366, #128c7e);">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <h5>WhatsApp</h5>
+                                    <p>Quickest way to reach me</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <a href="https://www.facebook.com/pojitha.karunathilake.9/" target="_blank" class="contact-method">
+                                    <div class="contact-icon" style="background: linear-gradient(135deg, #3b5998, #4c70ba);">
+                                        <i class="fab fa-facebook"></i>
+                                    </div>
+                                    <h5>Facebook</h5>
+                                    <p>Send me a message</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <a href="mailto:pojithatutor@gmail.com" class="contact-method">
+                                    <div class="contact-icon" style="background: linear-gradient(135deg, #0077b5, #00a0dc);">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h5>Email</h5>
+                                    <p>pojithatutor@gmail.com</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-note text-center mt-5">
+                            <p>
+                                <i class="fas fa-clock me-2"></i>
+                                I typically respond within 24 hours. Career guidance sessions are <strong>always free</strong>.
                             </p>
                         </div>
                     </div>
@@ -391,23 +614,24 @@
     <!-- Footer -->
     <footer class="py-4">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>&copy; 2025 Pojitha Hettiarachchilalage. All Rights Reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="assets/img/pojitha-tech-logo.png" alt="PojithaTech" height="45">
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <p class="mb-0 footer-copy">&copy; 2025 Pojitha Hettiarachchilalage. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="https://www.linkedin.com/in/pojitha-hettiarachchilalage-830023161/" target="_blank" class="footer-social me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="http://wa.me/447443995851" target="_blank" class="footer-social me-3"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:pojithatutor@gmail.com" class="footer-social"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Typed.js -->
     <script src="js/lib/typed.min.js"></script>
-    
-    <!-- Typed.js -->
-    <script src="js/lib/typed.min.js"></script>
-    
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
